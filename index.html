@@ -1,395 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kiana Robinson</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#FAF8F5;
-  --ink:#1A1714;
-  --muted:#96908A;
-  --sand:#E8D5C0;
-  --sand-text:#7A5C40;
-  --card:#F3EEE8;
-  --border:#E5DDD4;
-  --sand-deep:#C4A882;
-}
-html{scroll-behavior:smooth}
-body{font-family:'Syne',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;overflow-x:hidden}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes popIn{0%{opacity:0;transform:scale(0.88)}70%{transform:scale(1.04)}100%{opacity:1;transform:scale(1)}}
-@keyframes tagBounce{0%{opacity:0;transform:translateY(8px) scale(0.9)}60%{transform:translateY(-3px) scale(1.02)}100%{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-@keyframes wiggle{0%,100%{transform:rotate(0deg)}25%{transform:rotate(-4deg)}75%{transform:rotate(4deg)}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  <title>Kiana Robinson | HR Operations and Administrative Support</title>
+  <meta name="description" content="Kiana Robinson is an early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, team leadership, and business operations support.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Kiana Robinson">
 
-.hero-tag{animation:popIn 0.5s cubic-bezier(.34,1.56,.64,1) 0.1s both}
-.hero h1{animation:fadeUp 0.6s ease 0.25s both}
-.hero-sub{animation:fadeUp 0.6s ease 0.4s both}
-.hero-chips{animation:fadeUp 0.6s ease 0.55s both}
-.hero-right-panel{animation:fadeUp 0.7s ease 0.45s both}
+  <link rel="canonical" href="https://kianarobinson.com/">
 
-.chip{transition:transform 0.18s, background 0.18s, border-color 0.18s}
-.chip:hover{transform:translateY(-2px) scale(1.04);background:var(--sand);border-color:var(--sand-deep)}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kiana Robinson | HR Operations and Administrative Support">
+  <meta property="og:description" content="Early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, and business operations support.">
+  <meta property="og:url" content="https://kianarobinson.com/">
+  <meta property="og:site_name" content="Kiana Robinson">
 
-.reveal{opacity:0;transform:translateY(18px);transition:opacity 0.55s ease, transform 0.55s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-delay-1{transition-delay:0.08s}
-.reveal-delay-2{transition-delay:0.16s}
-.reveal-delay-3{transition-delay:0.24s}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kiana Robinson | HR Operations and Administrative Support">
+  <meta name="twitter:description" content="Early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, and business operations support.">
 
-nav{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:1.25rem 2.5rem;position:sticky;top:0;z-index:50;
-  background:rgba(250,248,245,0.92);backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--border);animation:fadeIn 0.4s ease both;
-}
-.nav-name{font-size:0.85rem;font-weight:700;letter-spacing:0.02em;text-decoration:none;color:var(--ink);transition:opacity 0.15s}
-.nav-name:hover{opacity:0.6}
-.nav-pill{
-  background:var(--sand);color:var(--sand-text);
-  font-size:0.7rem;font-weight:700;letter-spacing:0.08em;
-  padding:0.35rem 0.9rem;border-radius:999px;
-  text-decoration:none;transition:background 0.2s, transform 0.2s, color 0.2s;
-}
-.nav-pill:hover{background:var(--sand-deep);color:#fff;transform:scale(1.05)}
-.nav-pill:active{transform:scale(0.97)}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kiana Robinson",
+    "url": "https://kianarobinson.com/",
+    "jobTitle": "HR Operations and Administrative Support",
+    "description": "Early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, team leadership, and business operations support.",
+    "email": "mailto:kiananr04@gmail.com",
+    "telephone": "+1-908-758-6897",
+    "sameAs": [
+      "https://www.linkedin.com/in/kianarobinsonn/"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Utah"
+    }
+  }
+  </script>
 
-/* ── HERO ── */
-.hero-wrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:center;padding:5rem 2.5rem 4rem}
-.hero-tag{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  background:var(--sand);color:var(--sand-text);
-  font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
-  padding:0.4rem 0.9rem;border-radius:999px;margin-bottom:2rem;
-}
-.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--sand-text);animation:blink 2s ease-in-out infinite}
-h1{font-family:'Instrument Serif',serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:400;line-height:1.05;letter-spacing:-0.02em;margin-bottom:2rem}
-h1 i{color:var(--muted)}
-.hero-sub{font-size:1rem;color:var(--muted);max-width:52ch;line-height:1.7;margin-bottom:3rem}
-.hero-chips{display:flex;flex-wrap:wrap;gap:0.5rem}
-.chip{font-size:0.75rem;font-weight:500;padding:0.4rem 0.9rem;border-radius:999px;border:1px solid var(--border);color:var(--ink);background:var(--card);cursor:default}
-.hero-chips .chip:nth-child(1){animation:tagBounce 0.4s ease 0.6s both}
-.hero-chips .chip:nth-child(2){animation:tagBounce 0.4s ease 0.68s both}
-.hero-chips .chip:nth-child(3){animation:tagBounce 0.4s ease 0.76s both}
-.hero-chips .chip:nth-child(4){animation:tagBounce 0.4s ease 0.84s both}
-
-/* ── HERO RIGHT PANEL ── */
-.hero-right-panel{
-  display:flex;flex-direction:column;gap:0.75rem;
-}
-.stat-card{
-  background:var(--card);border:1px solid var(--border);border-radius:14px;
-  padding:1.25rem 1.4rem;transition:transform 0.2s, background 0.2s;
-}
-.stat-card:hover{transform:translateY(-2px) rotate(0.4deg);background:#fff}
-.stat-num{font-family:'Instrument Serif',serif;font-size:2rem;color:var(--ink);line-height:1;margin-bottom:0.3rem}
-.stat-label{font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
-.availability-card{
-  background:var(--ink);border-radius:14px;padding:1.25rem 1.4rem;
-  display:flex;align-items:center;gap:0.75rem;
-  animation:float 4s ease-in-out 1s infinite;
-}
-.avail-dot{width:8px;height:8px;border-radius:50%;background:var(--sand);flex-shrink:0;animation:blink 2s ease-in-out infinite}
-.avail-text{font-size:0.75rem;font-weight:700;letter-spacing:0.06em;color:rgba(255,255,255,0.8);line-height:1.4}
-
-/* ── LAYOUT ── */
-.divider{border:none;border-top:1px solid var(--border);margin:0}
-section{padding:4rem 2.5rem;max-width:900px;margin:0 auto}
-.s-label{font-size:0.65rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
-h2{font-family:'Instrument Serif',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.1;margin-bottom:2.5rem}
-
-/* ── ABOUT ── */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
-.about-body p{font-size:0.92rem;color:#4A4440;line-height:1.8;margin-bottom:1rem}
-.focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:16px;overflow:hidden}
-.focus-cell{background:var(--bg);padding:1.5rem;transition:background 0.2s, transform 0.2s;cursor:default}
-.focus-cell:hover{background:var(--sand);transform:scale(1.02)}
-.focus-cell:hover .focus-n,.focus-cell:hover .focus-text{color:var(--sand-text)}
-.focus-n{font-family:'Instrument Serif',serif;font-size:1.8rem;color:var(--border);margin-bottom:0.5rem;line-height:1;transition:color 0.2s}
-.focus-text{font-size:0.85rem;font-weight:500;line-height:1.4;color:var(--ink);transition:color 0.2s}
-
-/* ── EXPERIENCE ── */
-.exp-row{display:grid;grid-template-columns:160px 1fr;gap:2rem;padding:2rem 0;border-top:1px solid var(--border)}
-.exp-company{font-size:0.85rem;font-weight:700;margin-bottom:0.2rem}
-.exp-date{font-size:0.72rem;color:var(--muted)}
-.exp-role-pill{display:inline-block;font-size:0.65rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;background:var(--sand);color:var(--sand-text);padding:0.2rem 0.6rem;border-radius:999px;margin-top:0.5rem;transition:transform 0.2s}
-.exp-row:hover .exp-role-pill{transform:scale(1.06)}
-.exp-bullets{list-style:none;margin-bottom:1rem}
-.exp-bullets li{font-size:0.88rem;color:#4A4440;line-height:1.65;padding:0.3rem 0 0.3rem 1.2rem;position:relative}
-.exp-bullets li::before{content:'·';position:absolute;left:0;color:var(--sand-deep);font-size:1.2rem;line-height:1.4}
-.tag-row{display:flex;flex-wrap:wrap;gap:0.4rem}
-.tag{font-size:0.65rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:0.2rem 0.65rem;border-radius:999px;border:1px solid var(--border);color:var(--muted);transition:border-color 0.15s, color 0.15s}
-.tag:hover{border-color:var(--sand-deep);color:var(--sand-text)}
-
-/* ── PATH / CONTACT ── */
-.path-box{background:var(--ink);border-radius:20px;padding:3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-.path-text h3{font-family:'Instrument Serif',serif;font-size:2rem;font-weight:400;color:#fff;line-height:1.15;margin-bottom:1rem}
-.path-text p{font-size:0.88rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:1.5rem}
-.path-pill{display:inline-flex;align-items:center;gap:0.5rem;background:var(--sand);color:var(--sand-text);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;padding:0.5rem 1rem;border-radius:999px;transition:transform 0.2s}
-.path-pill:hover{transform:scale(1.04)}
-.path-roles{display:flex;flex-direction:column;gap:0.5rem}
-.path-role{background:rgba(255,255,255,0.06);border-radius:10px;padding:0.9rem 1.1rem;display:flex;justify-content:space-between;align-items:center;transition:background 0.15s, transform 0.2s;text-decoration:none;cursor:pointer}
-.path-role:hover{background:rgba(255,255,255,0.11);transform:translateX(4px)}
-.path-role-name{font-size:0.82rem;color:#fff;font-weight:500}
-.path-role-tag{font-size:0.62rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:var(--sand);color:var(--sand-text);padding:0.2rem 0.6rem;border-radius:999px}
-
-/* ── FOOTER ── */
-footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center}
-.footer-left{display:flex;flex-direction:column;gap:0.3rem}
-.footer-name{font-size:0.8rem;font-weight:700;color:var(--ink)}
-.footer-tagline{font-size:0.72rem;color:var(--muted)}
-.footer-right{display:flex;align-items:center;gap:1rem}
-.footer-links{display:flex;gap:1.25rem;align-items:center}
-.footer-links a{font-size:0.75rem;color:var(--muted);text-decoration:none;transition:color 0.15s, transform 0.15s;display:inline-block}
-.footer-links a:hover{color:var(--ink);transform:translateY(-1px)}
-.footer-cta{background:var(--sand);color:var(--sand-text);font-size:0.72rem;font-weight:700;letter-spacing:0.08em;padding:0.45rem 1rem;border-radius:999px;text-decoration:none;transition:background 0.2s,transform 0.2s,color 0.2s;white-space:nowrap}
-.footer-cta:hover{background:var(--sand-deep);color:#fff;transform:scale(1.04)}
-.linkedin-link:hover svg{animation:wiggle 0.35s ease}
-
-@media(max-width:800px){
-  nav{padding:1rem 1.25rem}
-  .hero-wrap{grid-template-columns:1fr;padding:3rem 1.25rem 2.5rem;gap:2rem}
-  .hero-right-panel{flex-direction:row;flex-wrap:wrap}
-  .stat-card,.availability-card{flex:1;min-width:130px}
-  section{padding:2.5rem 1.25rem}
-  .about-grid,.focus-grid{grid-template-columns:1fr}
-  .exp-row{grid-template-columns:1fr;gap:1rem}
-  .path-box{grid-template-columns:1fr;padding:2rem;gap:2rem}
-  footer{flex-direction:column;gap:1.25rem;padding:1.5rem 1.25rem;text-align:center}
-  .footer-right{flex-direction:column;gap:0.75rem}
-  .footer-links{flex-wrap:wrap;justify-content:center}
-}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <a href="#" class="nav-name">Kiana Robinson</a>
-  <a href="mailto:kianar04@gmail.com" class="nav-pill">Say hello ↗</a>
-</nav>
+  <nav>
+    <a href="/" class="nav-name">Kiana Robinson</a>
+    <a href="mailto:kiananr04@gmail.com" class="nav-pill">Say hello ↗</a>
+  </nav>
 
-<!-- HERO -->
-<div class="hero-wrap">
-  <div class="hero-left">
-    <div class="hero-tag">
-      <div class="hero-tag-dot"></div>
-      Available in-person &amp; remotely
-    </div>
-    <h1>HR + Ops<br>professional<br><i>in motion.</i></h1>
-    <p class="hero-sub">
-      I'm an early-career professional building toward high-value roles at the intersection 
-      of people strategy, business operations, and technology.
-    </p>
-    <div class="hero-chips">
-      <span class="chip">HR</span>
-      <span class="chip">Business</span>
-      <span class="chip">Management</span>
-      <span class="chip">Administration</span>
-    </div>
-  </div>
-
-  <div class="hero-right-panel">
-    <div class="stat-card">
-      <div class="stat-num">3+</div>
-      <div class="stat-label">Years in operations</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-num">20+</div>
-      <div class="stat-label">Employees supervised</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-num">M&A</div>
-      <div class="stat-label">Acquisition onboarding</div>
-    </div>
- 
-  </div>
-</div>
-
-<hr class="divider">
-
-<section>
-  <p class="s-label reveal">About</p>
-  <h2 class="reveal reveal-delay-1">Not generalist HR.<br>Systems thinking.</h2>
-  <div class="about-grid">
-    <div class="about-body reveal reveal-delay-1">
-      <p>I'm an early-career business and HR professional with hands-on experience in operations during a live company acquisition, benefits coordination, I-9 processing, and internal workforce reporting.</p>
-      <p>I'm working toward positions that combine people strategy and technology-enabled operations, merging business principles, data literacy, and process ownership.</p>
-      <p>I'm passionate about building systems and processes that help organizations run better, and I want to leverage data and technology to connect people strategy with business outcomes.</p>
-      <p>I'm open to in-person roles and fully remote positions, and I'm actively working toward long-term international opportunities in Europe.</p>
-    </div>
-    <div class="focus-grid reveal reveal-delay-2">
-      <div class="focus-cell">
-        <div class="focus-n">01</div>
-        <div class="focus-text">Business operations &amp; process coordination</div>
+  <div class="hero-wrap">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <div class="hero-tag-dot"></div>
+        Available in-person &amp; remotely
       </div>
-      <div class="focus-cell">
-        <div class="focus-n">02</div>
-        <div class="focus-text">HR systems &amp; workforce management</div>
-      </div>
-      <div class="focus-cell">
-        <div class="focus-n">03</div>
-        <div class="focus-text">Organizational development &amp; change</div>
-      </div>
-      <div class="focus-cell">
-        <div class="focus-n">04</div>
-        <div class="focus-text">Data-informed decision making</div>
+      <h1>Kiana Robinson</h1>
+      <h2>HR + Ops professional in motion.</h2>
+      <p class="hero-sub">
+        I'm an early-career professional building toward high-value roles at the intersection
+        of people strategy, business operations, and technology.
+      </p>
+      <p class="hero-credibility-strip">Experience in live acquisition environment · Supervised 10+ employees · HR systems exposure · Based in Salt Lake City</p>
+      <div class="hero-chips">
+        <span class="chip">HR</span>
+        <span class="chip">Business</span>
+        <span class="chip">Management</span>
+        <span class="chip">Administration</span>
       </div>
     </div>
-  </div>
-</section>
 
-<hr class="divider">
-
-<section id="experience">
-  <p class="s-label reveal">Experience</p>
-  <h2 class="reveal reveal-delay-1">Where I've been.</h2>
-
-  <div class="exp-row reveal">
-    <div>
-      <div class="exp-company">Squire &amp; Company</div>
-      <div class="exp-date">Feb 2025 – Present</div>
-      <div class="exp-role-pill">Administrative Assistant</div>
-    </div>
-    <div>
-      <ul class="exp-bullets">
-        <li>I support tax and audit teams with internal workflow coordination and documentation across client engagements.</li>
-        <li>I prepare billing materials and coordinate with accounting on invoice accuracy and timing.</li>
-        <li>I build and maintain workforce reports tracking recruitment cycles to support leadership planning.</li>
-      </ul>
-      <div class="tag-row">
-        <span class="tag">Internal ops</span>
-        <span class="tag">Workforce reporting</span>
-        <span class="tag">Billing coordination</span>
+    <div class="hero-right-panel">
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years in operations</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Employees supervised</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">M&amp;A</div>
+        <div class="stat-label">Acquisition onboarding</div>
+      </div>
+      <div class="availability-card">
+        <div class="avail-dot"></div>
+        <div class="avail-text">Open to roles - in-person or fully remote</div>
       </div>
     </div>
   </div>
 
-  <div class="exp-row reveal reveal-delay-1">
-    <div>
-      <div class="exp-company">Squire &amp; Company</div>
-      <div class="exp-date">Nov 2024 – Feb 2025</div>
-      <div class="exp-role-pill">Human Resources Intern</div>
-    </div>
-    <div>
-      <ul class="exp-bullets">
-        <li>I contributed during a live acquisition — managing health benefits enrollment for incoming employees and setting up records in internal HR systems.</li>
-        <li>I supported employees through ADP benefits enrollment with accurate documentation and deadline adherence.</li>
-        <li>I coordinated new hire onboarding including I-9 verification and collaborated with payroll on company-wide communications.</li>
-      </ul>
-      <div class="tag-row">
-        <span class="tag">ADP</span>
-        <span class="tag">Onboarding</span>
-        <span class="tag">Benefits admin</span>
-        <span class="tag">M&amp;A support</span>
+  <hr class="divider">
+
+  <section>
+    <p class="s-label reveal">About</p>
+    <h2 class="reveal reveal-delay-1">Systems thinking.</h2>
+    <div class="about-grid">
+      <div class="about-body reveal reveal-delay-1">
+        <p>I'm an early-career business and HR professional with hands-on experience in operations during a live company acquisition, benefits coordination, I-9 processing, and internal workforce reporting.</p>
+        <p>I'm working toward positions that combine people strategy and technology-enabled operations, merging business principles, data literacy, and process ownership.</p>
+        <p>I'm passionate about building systems and processes that help organizations run better, and I want to leverage data and technology to connect people strategy with business outcomes.</p>
+        <p>I'm open to in-person roles and fully remote positions.</p>
+      </div>
+      <div class="focus-grid reveal reveal-delay-2">
+        <div class="focus-cell">
+          <div class="focus-n">01</div>
+          <div class="focus-text">Business operations &amp; process coordination</div>
+        </div>
+        <div class="focus-cell">
+          <div class="focus-n">02</div>
+          <div class="focus-text">HR systems &amp; workforce management</div>
+        </div>
+        <div class="focus-cell">
+          <div class="focus-n">03</div>
+          <div class="focus-text">Organizational development &amp; change</div>
+        </div>
+        <div class="focus-cell">
+          <div class="focus-n">04</div>
+          <div class="focus-text">Data-informed decision making</div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="exp-row reveal reveal-delay-2">
-    <div>
-      <div class="exp-company">Windsor Fashions</div>
-      <div class="exp-date">Aug – Nov 2024</div>
-      <div class="exp-role-pill">Asst. Store Manager</div>
-    </div>
-    <div>
-      <ul class="exp-bullets">
-        <li>I coordinated daily operations, staff scheduling, and performance feedback for associates.</li>
-        <li>I managed inventory, customer inquiries, and cash control procedures.</li>
-      </ul>
-      <div class="tag-row">
-        <span class="tag">Team leadership</span>
-        <span class="tag">Scheduling</span>
+  <hr class="divider">
+
+  <section id="experience">
+    <p class="s-label reveal">Experience</p>
+    <h2 class="reveal reveal-delay-1">Where I've been.</h2>
+
+    <div class="exp-row reveal">
+      <div>
+        <div class="exp-company">Squire &amp; Company</div>
+        <div class="exp-date">Feb 2025 - Present</div>
+        <div class="exp-role-pill">Administrative Assistant</div>
+      </div>
+      <div>
+        <ul class="exp-bullets">
+          <li>I support tax and audit teams across internal workflow coordination and documentation for client engagements.</li>
+          <li>I prepare billing materials and coordinate with accounting across invoice accuracy and timing workflows.</li>
+          <li>I build and maintain workforce reports tracking recruitment cycles and planning needs for leadership review.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Internal ops</span>
+          <span class="tag">Workforce reporting</span>
+          <span class="tag">Billing coordination</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="exp-row reveal reveal-delay-3">
-    <div>
-      <div class="exp-company">The Hangout in the Heights</div>
-      <div class="exp-date">Dec 2022 – Jul 2024</div>
-      <div class="exp-role-pill">General Manager</div>
-    </div>
-    <div>
-      <ul class="exp-bullets">
-        <li>I supervised a team of 10+ employees across scheduling, inventory, and daily operations.</li>
-        <li>I implemented systems to streamline cash handling and reduce operational errors.</li>
-        <li>I improved customer satisfaction scores through staff training initiatives.</li>
-      </ul>
-      <div class="tag-row">
-        <span class="tag">Operations</span>
-        <span class="tag">Staff development</span>
-        <span class="tag">Process improvement</span>
+    <div class="exp-row reveal reveal-delay-1">
+      <div>
+        <div class="exp-company">Squire &amp; Company</div>
+        <div class="exp-date">Nov 2024 - Feb 2025</div>
+        <div class="exp-role-pill">Human Resources Intern</div>
+      </div>
+      <div>
+        <ul class="exp-bullets">
+          <li>I contributed during a live acquisition by managing health benefits enrollment for incoming employees and setting up records in internal HR systems.</li>
+          <li>I supported employees through ADP benefits enrollment, documentation handling, and deadline-based follow-through.</li>
+          <li>I coordinated new hire onboarding across I-9 verification, payroll coordination, and company-wide communications.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">ADP</span>
+          <span class="tag">Onboarding</span>
+          <span class="tag">Benefits admin</span>
+          <span class="tag">M&amp;A support</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<hr class="divider">
-
-<section id="path" style="padding-bottom:5rem">
-  <p class="s-label reveal">Reach out</p>
-  <div class="path-box reveal reveal-delay-1">
-    <div class="path-text">
-      <h3>Let's connect.</h3>
-      <p>I'm open to in-person and fully remote opportunities, and I'm actively building toward long-term work in Europe.</p>
-      <p>If you're hiring, collaborating, or just want to connect, feel free to reach out directly.</p>
-      <div class="path-pill">
-        <div style="width:6px;height:6px;border-radius:50%;background:var(--sand-text)"></div>
-        In-person &amp; remote · open to opportunities
+    <div class="exp-row reveal reveal-delay-2">
+      <div>
+        <div class="exp-company">Windsor Fashions</div>
+        <div class="exp-date">Aug - Nov 2024</div>
+        <div class="exp-role-pill">Asst. Store Manager</div>
+      </div>
+      <div>
+        <ul class="exp-bullets">
+          <li>I coordinated daily operations, staff scheduling, and performance feedback for store associates.</li>
+          <li>I managed inventory, customer inquiries, and day-to-day cash control procedures.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Team leadership</span>
+          <span class="tag">Scheduling</span>
+        </div>
       </div>
     </div>
-    <div class="path-roles">
-      <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);padding:0 0 0.75rem;">Contact</div>
-      <a href="mailto:kiananr04@gmail.com" class="path-role">
-        <span class="path-role-name">kiananr04@gmail.com</span>
-        <span class="path-role-tag">Email</span>
-      </a>
-      <a href="tel:+19087586897" class="path-role">
-        <span class="path-role-name">(908) 758-6897</span>
-        <span class="path-role-tag">Call / text</span>
-      </a>
-      <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="path-role">
-        <span class="path-role-name">linkedin.com/in/kianarobinsonn</span>
-        <span class="path-role-tag">LinkedIn</span>
-      </a>
-    </div>
-  </div>
-</section>
 
-<footer>
-  <div class="footer-left">
-    <div class="footer-name">Kiana Robinson</div>
-    <div class="footer-tagline">HR &amp; Ops · Available in-person &amp; remote · Europe-bound</div>
-  </div>
-  <div class="footer-right">
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="linkedin-link" style="display:inline-flex;align-items:center;gap:0.3rem">
-        LinkedIn
-        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
-          <path d="M2 2h8M10 2v8M10 2L2 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-      <a href="tel:+19087586897">(908) 758-6897</a>
+    <div class="exp-row reveal reveal-delay-3">
+      <div>
+        <div class="exp-company">The Hangout in the Heights</div>
+        <div class="exp-date">Dec 2022 - Jul 2024</div>
+        <div class="exp-role-pill">General Manager</div>
+      </div>
+      <div>
+        <ul class="exp-bullets">
+          <li>I supervised a team of 10+ employees across scheduling, inventory coordination, and daily operations.</li>
+          <li>I implemented systems to streamline cash handling workflows and reduce operational errors.</li>
+          <li>I improved customer satisfaction through staff training initiatives and day-to-day coaching.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Operations</span>
+          <span class="tag">Staff development</span>
+          <span class="tag">Process improvement</span>
+        </div>
+      </div>
     </div>
-    <a href="mailto:kiananr04@gmail.com" class="footer-cta">Say hello ↗</a>
-  </div>
-</footer>
+  </section>
 
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }
-  });
-}, {threshold: 0.12});
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+  <hr class="divider">
+
+  <section id="path" style="padding-bottom:5rem">
+    <p class="s-label reveal">Reach out</p>
+    <div class="path-box reveal reveal-delay-1">
+      <div class="path-text">
+        <h3>Let's connect.</h3>
+        <p>I'm open to in-person and fully remote opportunities, and I'm actively building toward a long-term career.</p>
+        <p>If you're hiring, collaborating, or just want to connect, feel free to reach out directly.</p>
+        <div class="path-pill">
+          <div style="width:6px;height:6px;border-radius:50%;background:var(--sand-text)"></div>
+          In-person &amp; remote · open to opportunities
+        </div>
+      </div>
+      <div class="path-roles">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);padding:0 0 0.75rem;">Contact</div>
+        <a href="mailto:kiananr04@gmail.com" class="path-role">
+          <span class="path-role-name">kiananr04@gmail.com</span>
+          <span class="path-role-tag">Email</span>
+        </a>
+        <a href="tel:+19087586897" class="path-role">
+          <span class="path-role-name">(908) 758-6897</span>
+          <span class="path-role-tag">Call / text</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="path-role">
+          <span class="path-role-name">linkedin.com/in/kianarobinsonn</span>
+          <span class="path-role-tag">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left">
+      <div class="footer-name">Kiana Robinson</div>
+      <div class="footer-tagline">HR &amp; Ops · Available in-person &amp; remote · SLC, UT</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="linkedin-link" style="display:inline-flex;align-items:center;gap:0.3rem">
+          LinkedIn
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+            <path d="M2 2h8M10 2v8M10 2L2 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="tel:+19087586897">(908) 758-6897</a>
+      </div>
+      <a href="mailto:kiananr04@gmail.com" class="footer-cta">Say hello ↗</a>
+    </div>
+    <div class="seo-hidden">Kiana Robinson HR Operations Administrative Support Workforce Coordination Salt Lake City Utah</div>
+  </footer>
+
+  <div class="internal-links-hidden">
+    <a href="/about">About</a>
+    <a href="/experience">Experience</a>
+  </div>
+
+  <script src="main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is Kiana Robinson?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kiana Robinson is an early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, team leadership, and business operations support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What roles is she pursuing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "She is pursuing HR operations, administrative support, and business operations roles that combine people strategy, technology-enabled operations, and process ownership. She is open to in-person and fully remote opportunities."
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
