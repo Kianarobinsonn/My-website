@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kiana Robinson | HR Operations and Administrative Support</title>
-  <meta name="description" content="Kiana Robinson is an early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, team leadership, and business operations support.">
+  <title>Kiana Robinson | HR Operations &amp; Administrative Support | Salt Lake City</title>
+  <meta name="description" content="Salt Lake City HR operations and administrative support professional with experience in onboarding, benefits administration, workforce reporting, and employee support.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Kiana Robinson">
   <meta name="theme-color" content="#FAF8F5">
+  <meta name="color-scheme" content="light dark">
 
   <link rel="canonical" href="https://kianarobinson.com/">
   <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
@@ -18,14 +19,37 @@
   <link rel="manifest" href="/media/site.webmanifest">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kiana Robinson | HR Operations and Administrative Support">
-  <meta property="og:description" content="Early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, and business operations support.">
+  <meta property="og:title" content="Kiana Robinson | HR Operations &amp; Administrative Support | Salt Lake City">
+  <meta property="og:description" content="Salt Lake City HR operations and administrative support professional with experience in onboarding, benefits administration, workforce reporting, and employee support.">
   <meta property="og:url" content="https://kianarobinson.com/">
   <meta property="og:site_name" content="Kiana Robinson">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kiana Robinson | HR Operations and Administrative Support">
-  <meta name="twitter:description" content="Early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, and business operations support.">
+  <meta name="twitter:title" content="Kiana Robinson | HR Operations &amp; Administrative Support | Salt Lake City">
+  <meta name="twitter:description" content="Salt Lake City HR operations and administrative support professional with experience in onboarding, benefits administration, workforce reporting, and employee support.">
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch (error) {
+        savedTheme = null;
+      }
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+      root.classList.add('js');
+      root.setAttribute('data-theme', theme);
+      root.style.colorScheme = theme;
+
+      const themeMeta = document.querySelector('meta[name="theme-color"]');
+      if (themeMeta) {
+        themeMeta.setAttribute('content', theme === 'dark' ? '#161311' : '#FAF8F5');
+      }
+    })();
+  </script>
 
   <script type="application/ld+json">
   {
@@ -33,17 +57,28 @@
     "@type": "Person",
     "name": "Kiana Robinson",
     "url": "https://kianarobinson.com/",
-    "jobTitle": "HR Operations and Administrative Support",
-    "description": "Early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, team leadership, and business operations support.",
-    "email": "mailto:kiananr04@gmail.com",
+    "jobTitle": "HR Operations and Administrative Support Professional",
+    "description": "HR operations and administrative support professional with experience in onboarding, benefits administration, workforce reporting, payroll coordination, and employee support.",
+    "email": "kiananr04@gmail.com",
     "telephone": "+1-908-758-6897",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Salt Lake City",
+      "addressRegion": "UT",
+      "addressCountry": "US"
+    },
+    "knowsAbout": [
+      "HR operations",
+      "Administrative support",
+      "Onboarding",
+      "Benefits administration",
+      "Workforce reporting",
+      "Employee support",
+      "Payroll coordination"
+    ],
     "sameAs": [
       "https://www.linkedin.com/in/kianarobinsonn/"
-    ],
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Utah"
-    }
+    ]
   }
   </script>
 
@@ -55,63 +90,85 @@
 </head>
 <body>
 
-  <nav>
+
+  <nav aria-label="Primary">
     <a href="/" class="nav-name">Kiana Robinson</a>
-    <a href="mailto:kiananr04@gmail.com" class="nav-pill">Say hello!</a>
+    <div class="nav-actions">
+      <button
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+      >
+        <span class="theme-toggle-track" aria-hidden="true">
+          <svg class="theme-toggle-icon theme-toggle-icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.25" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <span class="theme-toggle-thumb"></span>
+          <svg class="theme-toggle-icon theme-toggle-icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18.6 14.8A7.8 7.8 0 0 1 9.2 5.4a7.8 7.8 0 1 0 9.4 9.4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+      <a href="mailto:kiananr04@gmail.com" class="nav-pill" aria-label="Email Kiana Robinson">Email Kiana</a>
+    </div>
   </nav>
 
-  <div class="hero-wrap">
+  <main id="main-content">
+  <section class="hero-wrap" aria-labelledby="hero-title">
     <div class="hero-left">
       <div class="hero-tag">
         <div class="hero-tag-dot"></div>
-        Available in-person &amp; remotely
+        Salt Lake City based · open to in-person or remote roles
       </div>
-      <h1>Kiana Robinson</h1>
-      <h2>HR + Ops professional.</h2>
+      <h1 id="hero-title">Kiana Robinson</h1>
+      <p class="hero-role">HR operations and administrative support professional</p>
       <p class="hero-sub">
-        I'm an early-career professional building toward high-value roles at the intersection
-        of people strategy, business operations, and technology.
+        I support people, processes, and day-to-day operations with experience in onboarding,
+        benefits administration, workforce reporting, payroll coordination, and employee support.
       </p>
-      <p class="hero-credibility-strip">Experience in live acquisition environment · Supervised 20+ employees · HR systems exposure · Based in Salt Lake City</p>
+      <p class="hero-credibility-strip">Onboarding support · Benefits administration · Workforce reporting · Salt Lake City</p>
       <div class="hero-chips">
-        <span class="chip">HR</span>
-        <span class="chip">Business</span>
-        <span class="chip">Management</span>
-        <span class="chip">Administration</span>
+        <span class="chip">HR operations</span>
+        <span class="chip">Administrative support</span>
+        <span class="chip">People operations</span>
+        <span class="chip">Workforce reporting</span>
       </div>
     </div>
 
-    <div class="hero-right-panel">
+    <div class="hero-right-panel" aria-label="Key experience highlights">
       <div class="stat-card">
         <div class="stat-num">3+</div>
         <div class="stat-label">Years in operations</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">20+</div>
-        <div class="stat-label">Employees supervised</div>
+        <div class="stat-num">ADP</div>
+        <div class="stat-label">Benefits enrollment</div>
       </div>
       <div class="stat-card">
         <div class="stat-num">M&amp;A</div>
-        <div class="stat-label">Acquisition onboarding</div>
+        <div class="stat-label">Acquisition support</div>
       </div>
       <div class="availability-card">
         <div class="avail-dot"></div>
-        <div class="avail-text">Open to roles - in-person or fully remote</div>
+        <div class="avail-text">Open to HR operations, administrative support, and people operations roles</div>
       </div>
     </div>
-  </div>
+  </section>
 
   <hr class="divider">
 
-  <section>
+  <section aria-labelledby="about-title">
     <p class="s-label reveal">About</p>
-    <h2 class="reveal reveal-delay-1">Systems thinking.</h2>
+    <h2 id="about-title" class="reveal reveal-delay-1">Organized support for people and processes.</h2>
+    <p class="section-intro reveal reveal-delay-1">I bring hands-on experience across HR operations, administrative support, onboarding, benefits administration, workforce reporting, and employee support.</p>
     <div class="about-grid">
       <div class="about-body reveal reveal-delay-1">
-        <p>I'm an early-career business and HR professional with hands-on experience in operations during a live company acquisition, benefits coordination, I-9 processing, and internal workforce reporting.</p>
-        <p>I'm working toward positions that combine people strategy and technology-enabled operations, merging business principles, data literacy, and process ownership.</p>
-        <p>I'm passionate about building systems and processes that help organizations run better, and I want to leverage data and technology to connect people strategy with business outcomes.</p>
-        <p>I'm open to in-person roles and fully remote positions.</p>
+        <p>I'm an early-career HR operations and administrative support professional with hands-on experience in live acquisition support, ADP benefits enrollment, I-9 processing, internal documentation, and workforce reporting.</p>
+        <p>I do my best work in organized, process-driven environments where accuracy, follow-through, and clear communication help teams stay coordinated.</p>
+        <p>I'm pursuing roles in HR operations, administrative support, people operations, and business support where I can contribute reliable execution across teams, systems, and daily workflows.</p>
       </div>
       <div class="focus-grid reveal reveal-delay-2">
         <div class="focus-cell">
@@ -120,15 +177,15 @@
         </div>
         <div class="focus-cell">
           <div class="focus-n">02</div>
-          <div class="focus-text">HR systems &amp; workforce management</div>
+          <div class="focus-text">Onboarding, benefits &amp; employee support</div>
         </div>
         <div class="focus-cell">
           <div class="focus-n">03</div>
-          <div class="focus-text">Organizational development &amp; change</div>
+          <div class="focus-text">HR systems &amp; internal documentation</div>
         </div>
         <div class="focus-cell">
           <div class="focus-n">04</div>
-          <div class="focus-text">Data-informed decision making</div>
+          <div class="focus-text">Workforce reporting &amp; team coordination</div>
         </div>
       </div>
     </div>
@@ -136,21 +193,22 @@
 
   <hr class="divider">
 
-  <section id="experience">
+  <section id="experience" aria-labelledby="experience-title">
     <p class="s-label reveal">Experience</p>
-    <h2 class="reveal reveal-delay-1">Where I've been.</h2>
+    <h2 id="experience-title" class="reveal reveal-delay-1">Experience across HR operations and business support.</h2>
+    <p class="section-intro reveal reveal-delay-1">My experience spans onboarding support, benefits administration, workforce reporting, administrative coordination, staff scheduling, and day-to-day operational support.</p>
 
     <div class="exp-row reveal">
       <div>
         <div class="exp-company">Squire &amp; Company</div>
-        <div class="exp-date">Feb 2025 - Present</div>
+        <div class="exp-date"><time datetime="2025-02">Feb 2025</time> - Present</div>
         <div class="exp-role-pill">Administrative Assistant</div>
       </div>
       <div>
         <ul class="exp-bullets">
-          <li>I support tax and audit teams across internal workflow coordination and documentation for client engagements.</li>
-          <li>I prepare billing materials and coordinate with accounting across invoice accuracy and timing workflows.</li>
-          <li>I build and maintain workforce reports tracking recruitment cycles and planning needs for leadership review.</li>
+          <li>I support tax and audit teams by coordinating internal workflows, organizing documentation, and helping client work move smoothly across deadlines.</li>
+          <li>I prepare billing materials and coordinate with accounting on invoice accuracy, timing, and internal follow-through.</li>
+          <li>I build and maintain workforce reports that track recruitment activity and support leadership planning.</li>
         </ul>
         <div class="tag-row">
           <span class="tag">Internal ops</span>
@@ -163,14 +221,14 @@
     <div class="exp-row reveal reveal-delay-1">
       <div>
         <div class="exp-company">Squire &amp; Company</div>
-        <div class="exp-date">Nov 2024 - Feb 2025</div>
+        <div class="exp-date"><time datetime="2024-11">Nov 2024</time> - <time datetime="2025-02">Feb 2025</time></div>
         <div class="exp-role-pill">Human Resources Intern</div>
       </div>
       <div>
         <ul class="exp-bullets">
-          <li>I contributed during a live acquisition by managing health benefits enrollment for incoming employees and setting up records in internal HR systems.</li>
-          <li>I supported employees through ADP benefits enrollment, documentation handling, and deadline-based follow-through.</li>
-          <li>I coordinated new hire onboarding across I-9 verification, payroll coordination, and company-wide communications.</li>
+          <li>I supported a live acquisition by managing health benefits enrollment for incoming employees and setting up records in internal HR systems.</li>
+          <li>I helped employees complete ADP benefits enrollment while handling documentation and deadline-based follow-through.</li>
+          <li>I coordinated onboarding tasks including I-9 verification, payroll communication, and new hire support.</li>
         </ul>
         <div class="tag-row">
           <span class="tag">ADP</span>
@@ -184,14 +242,13 @@
     <div class="exp-row reveal reveal-delay-2">
       <div>
         <div class="exp-company">Windsor Fashions</div>
-        <div class="exp-date">Aug - Nov 2024</div>
+        <div class="exp-date"><time datetime="2024-08">Aug 2024</time> - <time datetime="2024-11">Nov 2024</time></div>
         <div class="exp-role-pill">Asst. Store Manager</div>
       </div>
       <div>
         <ul class="exp-bullets">
-          <li>I coordinated daily operations, staff scheduling, and performance feedback for store associates.</li>
+          <li>I coordinated daily store operations, staff scheduling, and performance feedback for associates in a fast-paced retail setting.</li>
           <li>I managed inventory, customer inquiries, and day-to-day cash control procedures.</li>
-          <li>I led a team of 10+ employees, fostering a collaborative environment focused on customer satisfaction and operational excellence.</li>
         </ul>
         <div class="tag-row">
           <span class="tag">Team leadership</span>
@@ -203,14 +260,14 @@
     <div class="exp-row reveal reveal-delay-3">
       <div>
         <div class="exp-company">The Hangout in the Heights</div>
-        <div class="exp-date">Dec 2022 - Jul 2024</div>
+        <div class="exp-date"><time datetime="2022-12">Dec 2022</time> - <time datetime="2024-07">Jul 2024</time></div>
         <div class="exp-role-pill">General Manager</div>
       </div>
       <div>
         <ul class="exp-bullets">
-          <li>I supervised a team of 20+ employees across scheduling, inventory coordination, and daily operations.</li>
+          <li>I supervised a team of 10+ employees across scheduling, inventory coordination, and daily operations.</li>
           <li>I implemented systems to streamline cash handling workflows and reduce operational errors.</li>
-          <li>I improved customer satisfaction through staff training initiatives and day-to-day coaching.</li>
+          <li>I supported day-to-day service consistency through staff training and coaching.</li>
         </ul>
         <div class="tag-row">
           <span class="tag">Operations</span>
@@ -223,85 +280,56 @@
 
   <hr class="divider">
 
-  <section id="path" style="padding-bottom:5rem">
+  <section id="path" aria-labelledby="contact-title" style="padding-bottom:5rem">
     <p class="s-label reveal">Reach out</p>
     <div class="path-box reveal reveal-delay-1">
       <div class="path-text">
-        <h3>Let's connect.</h3>
-        <p>I'm open to in-person and fully remote opportunities, and I'm actively building toward a long-term career.</p>
-        <p>If you're hiring, collaborating, or just want to connect, feel free to reach out directly.</p>
+        <h2 id="contact-title">Open to HR operations and administrative support roles.</h2>
+        <p>Based in Salt Lake City and open to in-person or remote opportunities.</p>
+        <p>If you're hiring for HR operations, administrative support, onboarding support, or people-facing business operations work, I'd be glad to connect.</p>
         <div class="path-pill">
-          <div style="width:6px;height:6px;border-radius:50%;background:var(--sand-text)"></div>
-          In-person &amp; remote · open to opportunities
+          <div class="path-pill-dot"></div>
+          Salt Lake City · open to in-person or remote roles
         </div>
       </div>
-      <div class="path-roles">
-        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);padding:0 0 0.75rem;">Contact</div>
-        <a href="mailto:kiananr04@gmail.com" class="path-role">
+      <div class="path-roles" aria-label="Contact options">
+        <div class="path-label">Contact</div>
+        <a href="mailto:kiananr04@gmail.com" class="path-role" aria-label="Email Kiana Robinson">
           <span class="path-role-name">kiananr04@gmail.com</span>
           <span class="path-role-tag">Email</span>
         </a>
-        <a href="tel:+19087586897" class="path-role">
+        <a href="tel:+19087586897" class="path-role" aria-label="Call or text Kiana Robinson">
           <span class="path-role-name">+1 (908) 758-6897</span>
           <span class="path-role-tag">Call / text</span>
         </a>
-        <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="path-role">
+        <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="path-role" aria-label="View Kiana Robinson on LinkedIn">
           <span class="path-role-name">linkedin.com/in/kianarobinsonn</span>
           <span class="path-role-tag">LinkedIn</span>
         </a>
       </div>
     </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-left">
       <div class="footer-name">Kiana Robinson</div>
-      <div class="footer-tagline">HR &amp; Ops · Available in-person &amp; remote · SLC, UT</div>
+      <div class="footer-tagline">HR operations, administrative support, and people operations · Salt Lake City, UT</div>
     </div>
     <div class="footer-right">
       <div class="footer-links">
-        <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="linkedin-link" style="display:inline-flex;align-items:center;gap:0.3rem">
+        <a href="https://www.linkedin.com/in/kianarobinsonn/" target="_blank" rel="noopener" class="linkedin-link" style="display:inline-flex;align-items:center;gap:0.3rem" aria-label="View Kiana Robinson on LinkedIn">
           LinkedIn
           <svg width="11" height="11" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
             <path d="M2 2h8M10 2v8M10 2L2 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="tel:+19087586897">+1 (908) 758-6897</a>
+        <a href="tel:+19087586897" aria-label="Call or text Kiana Robinson">+1 (908) 758-6897</a>
       </div>
-      <a href="mailto:kiananr04@gmail.com" class="footer-cta">Say hello!</a>
+      <a href="mailto:kiananr04@gmail.com" class="footer-cta" aria-label="Email Kiana Robinson">Email Kiana</a>
     </div>
-    <div class="seo-hidden">Kiana Robinson HR Operations Administrative Support Workforce Coordination Salt Lake City Utah</div>
   </footer>
 
-  <div class="internal-links-hidden">
-    <a href="/about">About</a>
-    <a href="/experience">Experience</a>
-  </div>
-
   <script src="main.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Who is Kiana Robinson?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Kiana Robinson is an early-career HR and operations professional with experience in onboarding, benefits administration, workforce reporting, team leadership, and business operations support."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What roles is she pursuing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "She is pursuing HR operations, administrative support, and business operations roles that combine people strategy, technology-enabled operations, and process ownership. She is open to in-person and fully remote opportunities."
-        }
-      }
-    ]
-  }
-  </script>
 </body>
 </html>
